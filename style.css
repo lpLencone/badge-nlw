@@ -20,7 +20,7 @@ body {
 main {
   background: url(images/Mobile.svg);
   width: 375px;
-  height: 800px;
+  height: 720px;
   box-shadow: 0 0 35px var(--gray);
 }
 
