@@ -2,11 +2,6 @@
   margin: 0;
 }
 
-html,
-body {
-  height: 100%;
-}
-
 body {
   --gray: hsl(240, 9%, 89%);
 
@@ -14,14 +9,22 @@ body {
   display: grid;
   place-items: center;
 
-  background: linear-gradient(to bottom, #100005 0%, #202020 100%);
+  background: linear-gradient(
+    to bottom,
+    hsl(340, 100%, 4%) 0%,
+    hsl(0, 0%, 13%) 100%
+  );
 }
 
 main {
-  background: url(images/Mobile.svg);
-  width: 375px;
-  height: 720px;
-  box-shadow: 0 0 35px var(--gray);
+  background: url(images/Mobile.svg) no-repeat center/cover;
+
+  width: 100vw;
+  max-width: 375px;
+  min-height: 812px;
+  height: 100vh;
+
+  box-shadow: 0 0 20px rgb(143, 143, 143);
 }
 
 .container {
